@@ -3,7 +3,7 @@ import { GoogleOutlined, FacebookOutlined } from '@ant-design/icons'
 import "firebase/app";
 
 import { auth } from '../firebase'
-import index from '../index.css'
+// import index from '../index.css'
 import firebase from 'firebase/app';
 const Login = () => {
     return (
@@ -21,14 +21,14 @@ const Login = () => {
                 </div>
                 <div className="login-container">
                     <div className="login-button google"
-                    onClick={()=> auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
+                        onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
                     >
                         <GoogleOutlined /> Sign In with <b id='google-hover-color'>Google</b>
                     </div>
                     <br /><br />
                     <div className="login-button facebook"
-                                            onClick={()=> auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())}
-                                            >
+                        onClick={() => auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())}
+                    >
                         <FacebookOutlined /> Sign In with facebook
                     </div>
                 </div>
