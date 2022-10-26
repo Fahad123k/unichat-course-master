@@ -107,17 +107,15 @@
   color: #e93232;
   /* font-size: 2rem;   */
 }
-#logo_I:hover{
+/* #logo_I:hover{
   color: #002766;
-  /* transform: rotateX(180deg); */
-  /* font-size:1.5rem;   */
-
-}
+} */
 
 #chat-logo{
   color: #e9dd32;
-  
-  
+}
+.chat-bk{
+  cursor: pointer;
 }
 
 .login-container{
