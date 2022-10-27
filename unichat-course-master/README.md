@@ -1,5 +1,5 @@
 # Minichat Application
-- LoginUI
+# LoginUI
 ![LoginUI](./src/images/screenshot03.png)
 ![Chat page](./src/images/screenshot02.png)
 ![File Structure](./src/images/screenshot01.png)
