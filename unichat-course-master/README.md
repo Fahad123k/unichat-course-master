@@ -21,8 +21,8 @@ Firebase and Chat Engine are greats tools to setup apps fast and easily - great 
 - Mobile friendly
 - Run on any devices
 
-### dependencies
-- desinge purpose
+### Dependencies
+- Desinge purpose
 - - @ant-design/icons
 - Api call 
 - - Axios
