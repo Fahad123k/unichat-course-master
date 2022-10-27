@@ -1,6 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/auth";
 
+// export firebase ast const for auth
 export const auth =firebase.initializeApp ({
     apiKey: "AIzaSyAmu2JmC4Uy4jz0tZ6e5yr5-1B2achX8i4",
     authDomain: "minichat-13a24.firebaseapp.com",

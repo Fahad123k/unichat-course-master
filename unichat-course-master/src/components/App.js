@@ -10,7 +10,9 @@ import Login from "./Login";
 function App() {
   return (
     <div style={{ fontFamily: 'Avenir' }}>
+      {/* add Router */}
       <Router>
+        {/* authentiction provider */}
         <AuthProvider>
           <Switch>
             <Route path="/chats" component={Chats} />

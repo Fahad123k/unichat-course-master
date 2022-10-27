@@ -7,6 +7,8 @@ export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {
 
+    // Authprovider that handles the entire application state that’s great about react context	
+    // add some usefull hooks for initial  state
     const [loading, setLoading] = useState(true);
     const [user, setUser] = useState(null);
     const history = useHistory();
@@ -20,6 +22,7 @@ export const AuthProvider = ({ children }) => {
     }, [user, history]);
     const value = { user };
     return (
+        // pass users to all children 
         <AuthContext.Provider value={value}>
             {!loading && children}
         </AuthContext.Provider>
