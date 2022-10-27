@@ -12,6 +12,20 @@ You will learn how to build a react chat app using [https://chatengine.io](https
 
 Firebase and Chat Engine are greats tools to setup apps fast and easily - great to learn with!
 
-### Bonus - E-mail notifications
+### features
 
-If you want to upgrade this chat application even further than what is shown in the video, you can add e-mail notifications. More info on https://chatengine.io/docs/email_notifications.
+### dependencies
+- desinge purpose
+- - @ant-design/icons
+- Api call 
+- - Axios
+- For entire chat application
+- - React chat-engine
+
+- React Router –Dom
+- - It is a library that allows you to have multi-page application using react
+here imported Browser router as switch component and the route components
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+
+
+
