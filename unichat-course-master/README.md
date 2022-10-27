@@ -34,5 +34,7 @@ Firebase and Chat Engine are greats tools to setup apps fast and easily - great 
 here imported Browser router as switch component and the route components
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
+## hosted link
+![https://minichatfahad.netlify.app/]
 
 
