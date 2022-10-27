@@ -1,6 +1,8 @@
 # Minichat Application
 
-![Chat Application](https://i.ibb.co/GJwyy9m/Bv9-Js3-QLOLY-HD.jpg)
+![Chat Application](./src/images/screenshot01.png)
+![Chat Application](./src/images/screenshot02.png)
+![Chat Application](./src/images/screenshot03.png)
 
 ## Introduction
 
