@@ -21,11 +21,11 @@ export default function Chats() {
   }
 
   // function to get userPhoto via email
-  async function getFile(url) {
-    let response = await fetch(url);
+  const getFile=async (url)=> {
+    const response = await fetch(url);
     // blob function take document in binary form
-    let data = await response.blob();
-    return new File([data], "test.jpg", { type: 'image/jpeg' });
+    const data = await response.blob();
+    return new File([data], "userPhoto.jpg", { type: 'image/jpeg' });
   }
 
   // useEffect starts here
@@ -50,7 +50,7 @@ export default function Chats() {
           headers: {
             "project-id": process.env.REACT_APP_CHAT_ENGINE_ID,
             "user-name": user.email,
-            "user-secret": user.uid
+            "user-secret": user.uid,
           }
         }
       )
@@ -84,7 +84,7 @@ export default function Chats() {
   }, [user, history])
 
   // if usser is not logged then return to empty div
-  if (!user || loading) return <div />;
+  if (!user || loading) return "loading";
 
   return (
     <div className="chats-page">

@@ -21,7 +21,7 @@ const Login = () => {
                 </div>
                 <div className="login-container">
                     <div className="login-button google"
-                    // onClick sign with google with firebase authentication
+                        // onClick sign with google with firebase authentication
                         onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
                     >
                         {/* '@ant-design/icons' */}
@@ -29,7 +29,7 @@ const Login = () => {
                     </div>
                     <br /><br />
                     <div className="login-button facebook"
-                     // onClick sign with firebase with firebase authentication
+                        // onClick sign with firebase with firebase authentication
                         onClick={() => auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())}
                     >
                         {/* '@ant-design/icons' */}
