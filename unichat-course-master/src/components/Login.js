@@ -2,6 +2,7 @@ import React from 'react'
 import { GoogleOutlined, FacebookOutlined } from '@ant-design/icons'
 import "firebase/app";
 
+//  this is an auth configuration object from firabse
 import { auth } from '../firebase'
 // import index from '../index.css'
 import firebase from 'firebase/app';
@@ -28,6 +29,9 @@ const Login = () => {
                         <GoogleOutlined /> Sign In with <b id='google-hover-color'>Google</b>
                     </div>
                     <br /><br />
+                    {/* for facebook auth from firebase get id nad key from developer.facebook.com
+                        create app and pase firebase fb aut link and get appId and app Secet
+                    */}
                     <div className="login-button facebook"
                         // onClick sign with firebase with firebase authentication
                         onClick={() => auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())}

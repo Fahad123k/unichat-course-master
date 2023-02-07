@@ -11,12 +11,15 @@ export const AuthProvider = ({ children }) => {
     // add some usefull hooks for initial  state
     const [loading, setLoading] = useState(true);
     const [user, setUser] = useState(null);
+    // re navigate router to somewhere
     const history = useHistory();
 
     useEffect(() => {
+        // on auth change or new user add or delete
         auth.onAuthStateChanged((user) => {
             setUser(user);
             setLoading(false);
+            // re navigate to our chat page when user is added  
            if(user) history.push('/chats');
         })
     }, [user, history]);

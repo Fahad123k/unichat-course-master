@@ -22,10 +22,15 @@ export default function Chats() {
 
   // function to get userPhoto via email
   const getFile=async (url)=> {
-    const response = await fetch(url);
-    // blob function take document in binary form
-    const data = await response.blob();
-    return new File([data], "userPhoto.jpg", { type: 'image/jpeg' });
+    try {
+      
+      const response = await fetch(url);
+      // blob function take document in binary form and contain image
+      const data = await response.blob();
+      return new File([data], "userPhoto.jpg", { type: 'image/jpeg' });
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   // useEffect starts here
@@ -55,7 +60,7 @@ export default function Chats() {
         }
       )
         .then(() => { setLoading(false); })
-        .catch((e) => {
+        .catch(() => {
           // load user data to formdata on chat UI
           let formdata = new FormData();
           formdata.append('email', user.email);
@@ -65,7 +70,12 @@ export default function Chats() {
           // call getFile functions
           getFile(user.photoURL)
             .then(avatar => {
-              formdata.append('avatar', avatar, avatar.name)
+              try {
+                
+                formdata.append('avatar', avatar, avatar.name)
+              } catch (error) {
+                console.log(error,"erroe in")
+              }
 
               // axios post call
               axios.post(
